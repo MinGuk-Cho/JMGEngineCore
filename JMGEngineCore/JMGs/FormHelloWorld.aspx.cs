@@ -13,5 +13,11 @@ namespace JMGEngineCore
         {
 
         }
+
+        protected void BtnClick_Click(object sender, EventArgs e)
+        {
+            lblDisplay.Text = txtInput.Text; //클릭했을 때 txtInput의 내용을 그대로 출력(보여)함
+            txtInput.Text = String.Empty; //다시 클릭 했을 때 공백을 출력(보여)함
+        }
     }
 }
